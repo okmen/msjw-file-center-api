@@ -21,7 +21,7 @@ import java.io.File;
 	 * @return boolean 返回类型 
 	 * @throws
  	 */
-	public String uploadFile(String localFile) throws Exception;
+	public String uploadFile(String localFile,Integer days) throws Exception;
 	
  	/**
 	 * @Title: uploadFile 
@@ -32,7 +32,7 @@ import java.io.File;
 	 * @return boolean 返回类型 
 	 * @throws
  	 */
-	public String uploadFile(File file) throws Exception;
+	public String uploadFile(File file,Integer days) throws Exception;
  	
  	/**
 	 * @Title: getQiniuImgDomain 
