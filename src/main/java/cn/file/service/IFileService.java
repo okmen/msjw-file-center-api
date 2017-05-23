@@ -1,6 +1,9 @@
  package cn.file.service;
  
 import java.io.File;
+import java.util.List;
+
+import javax.print.attribute.standard.Sides;
  
  /**
  * @ClassName: IFileService 
@@ -51,5 +54,12 @@ import java.io.File;
      * @throws
      */
     public String getUpToken();
-     
+    /**
+     * 写图片到225服务器
+     * @param reportSerialNumber
+     * @param base64Img
+     * @return
+     * @throws Exception
+     */
+    public List<String> writeImgReadilyShoot(String reportSerialNumber,List<String> base64Imgs)throws Exception;
  }
