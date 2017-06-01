@@ -62,4 +62,9 @@ import javax.print.attribute.standard.Sides;
      * @throws Exception
      */
     public List<String> writeImgReadilyShoot(String reportSerialNumber,List<String> base64Imgs)throws Exception;
+    /**
+     * 压缩历史随手拍图片
+     * @throws Exception
+     */
+    public void gziImgOld()throws Exception;
  }
