@@ -58,10 +58,11 @@ import javax.print.attribute.standard.Sides;
      * 写图片到225服务器
      * @param reportSerialNumber
      * @param base64Img
+     * @param illegalTime 违法时间
      * @return
      * @throws Exception
      */
-    public List<String> writeImgReadilyShoot(String reportSerialNumber,List<String> base64Imgs)throws Exception;
+    public List<String> writeImgReadilyShoot(String reportSerialNumber,List<String> base64Imgs,String illegalTime)throws Exception;
     /**
      * 压缩历史随手拍图片
      * @throws Exception
