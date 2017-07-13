@@ -3,7 +3,8 @@
 import java.io.File;
 import java.util.List;
 
-import javax.print.attribute.standard.Sides;
+import cn.sdk.bean.StVo;
+
  
  /**
  * @ClassName: IFileService 
@@ -54,15 +55,14 @@ import javax.print.attribute.standard.Sides;
      * @throws
      */
     public String getUpToken();
-    /**
+    /**O
      * 写图片到225服务器
      * @param reportSerialNumber
      * @param base64Img
-     * @param illegalTime 违法时间
      * @return
      * @throws Exception
      */
-    public List<String> writeImgReadilyShoot(String reportSerialNumber,List<String> base64Imgs,String illegalTime)throws Exception;
+    public List<String> writeImgReadilyShoot(String reportSerialNumber,List<StVo> base64Imgs)throws Exception;
     /**
      * 压缩历史随手拍图片
      * @throws Exception
