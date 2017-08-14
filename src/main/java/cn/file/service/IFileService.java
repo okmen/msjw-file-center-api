@@ -62,6 +62,15 @@ import cn.sdk.bean.StVo;
      * @return
      * @throws Exception
      */
+    public String uploadAdminWeb(File file)throws Exception;
+    
+    /**O
+     * 写图片到225服务器
+     * @param reportSerialNumber
+     * @param base64Img
+     * @return
+     * @throws Exception
+     */
     public List<String> writeImgReadilyShoot(String reportSerialNumber,List<StVo> base64Imgs)throws Exception;
     /**
      * 压缩历史随手拍图片
