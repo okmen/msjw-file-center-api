@@ -1,6 +1,8 @@
  package cn.file.service;
  
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.List;
 
 import cn.sdk.bean.StVo;
@@ -56,7 +58,7 @@ import cn.sdk.bean.StVo;
      */
     public String getUpToken();
     /**O
-     * 写图片到225服务器
+     * 写图片到服务器
      * @param reportSerialNumber
      * @param base64Img
      * @return
@@ -77,4 +79,13 @@ import cn.sdk.bean.StVo;
      * @throws Exception
      */
     public void gziImgOld()throws Exception;
+    
+    /**
+     * 写图片到服务器
+     * @param file
+     * @param pf
+     * @return
+     * @throws Exception
+     */
+    public String uploadFile(InputStream inputStream,String pf)throws Exception;
  }
