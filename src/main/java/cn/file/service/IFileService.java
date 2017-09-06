@@ -88,4 +88,13 @@ import cn.sdk.bean.StVo;
      * @throws Exception
      */
     public String uploadFile(InputStream inputStream,String pf)throws Exception;
+    
+    /**
+     * 二进制流写入到图片服务器
+     * @param input
+     * @param pf
+     * @return
+     * @throws Exception
+     */
+    public String uploadFile(String base64Str, String pf)throws Exception;
  }
