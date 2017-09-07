@@ -96,5 +96,5 @@ import cn.sdk.bean.StVo;
      * @return
      * @throws Exception
      */
-    public String uploadFile(String base64Str, String pf)throws Exception;
+    public String uploadFileImg(String base64Str, String pf)throws Exception;
  }
