@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.List;
 
+import cn.file.bean.vo.ProblemFeedbackVo;
 import cn.sdk.bean.StVo;
 
  
@@ -98,6 +99,7 @@ import cn.sdk.bean.StVo;
      */
     public String uploadFileImg(String base64Str, String pf)throws Exception;
     /**
+
      * 反馈图片存储获取
      * @param reportSerialNumber
      * @param base64Imgs
@@ -105,4 +107,12 @@ import cn.sdk.bean.StVo;
      * @throws Exception
      */
 	List<String> problemFeedback(String reportSerialNumber, List<StVo> base64Imgs) throws Exception;
+    /**
+     * 问题反馈
+     * @param problemFeedbackVo
+     * @return
+     */
+	public int saveProblemFeedback(ProblemFeedbackVo problemFeedbackVo);
+
+	public String writeImgProblemFeedback(String base64Img, String openId) throws Exception;
  }
