@@ -97,4 +97,12 @@ import cn.sdk.bean.StVo;
      * @throws Exception
      */
     public String uploadFileImg(String base64Str, String pf)throws Exception;
+    /**
+     * 反馈图片存储获取
+     * @param reportSerialNumber
+     * @param base64Imgs
+     * @return
+     * @throws Exception
+     */
+	List<String> problemFeedback(String reportSerialNumber, List<StVo> base64Imgs) throws Exception;
  }
