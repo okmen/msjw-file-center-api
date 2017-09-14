@@ -113,6 +113,4 @@ import cn.sdk.bean.StVo;
      * @return
      */
 	public int saveProblemFeedback(ProblemFeedbackVo problemFeedbackVo);
-
-	public String writeImgProblemFeedback(String base64Img, String openId) throws Exception;
  }
