@@ -65,7 +65,7 @@ import cn.sdk.bean.StVo;
      * @return
      * @throws Exception
      */
-    public String uploadAdminWeb(File file,String pf)throws Exception;
+    public String uploadAdminWeb(FileInputStream fileInputStream,String pf)throws Exception;
     
     /**O
      * 写图片到225服务器
